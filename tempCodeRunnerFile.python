@@ -1,0 +1,11 @@
+m = np.arange(1, 7).reshape(2, 3)
+# [[1 2 3]
+# [4 5 6]]
+
+m.sum() # 21
+m.sum(axis=0) # [5 7 9] down the columns
+m.sum(axis=1) # [ 6 15] across the rows
+m.mean(axis=0) # [2.5 3.5 4.5]
+
+m.T.shape # (3, 2) transpose
+m.ravel() # [1 2 3 4 5 6]
